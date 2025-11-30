@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito Sans";
+}
+
+main {
+    padding: 24px;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    padding-inline: 24px;
+    margin-inline: auto;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}

@@ -7,6 +7,7 @@ fetch("../data.json")
             console.log(country)
             const countryCard = document.createElement("a")
             countryCard.classList.add("countryCard")
+            countryCard.href = `/text/country.html?name=${country.name}`
 
             const countryText = `
                 <img src="${country.flags.svg}" alt="flag">
