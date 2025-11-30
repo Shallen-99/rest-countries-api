@@ -11,7 +11,7 @@ fetch("../data.json")
             countryCard.href = `/text/country.html?name=${country.name}`
 
             const countryText = `
-                <img src="${country.flags.svg}" alt="flag">
+                <img src="${country.flags.svg}" alt="${country.name} flag">
                 <div class="card-text">
                     <h2 class="card-title">${country.name}</h2>
                     <p><b>Population:</b> ${country.population.toLocaleString("en-US")}</p>

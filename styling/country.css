@@ -29,3 +29,9 @@ a {
     margin-inline: auto;
     box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+.back-button {
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 6px 24px;
+}
