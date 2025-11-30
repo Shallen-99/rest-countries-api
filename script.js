@@ -11,7 +11,7 @@ fetch("data.json")
             const countryText = `
                 <img src="${country.flags.svg}" alt="flag">
                 <div class="card-text">
-                    <h2 class="card-title"></h2>
+                    <h2 class="card-title">${country.name}</h2>
                     <p><b>Population:</b> </p>
                     <p><b>Region:</b> </p>
                     <p><b>Capital:</b> </p>
