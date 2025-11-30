@@ -1,6 +1,6 @@
 const container = document.querySelector(".container")
 
-fetch("data.json")
+fetch("../data.json")
     .then((res) => res.json())
     .then((data) => {
         data.forEach((country) => {
