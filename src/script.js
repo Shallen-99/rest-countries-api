@@ -1,4 +1,5 @@
 const container = document.querySelector(".container")
+const searchInput = document.getElementById("search");
 
 fetch("../data.json")
     .then((res) => res.json())
@@ -25,3 +26,12 @@ fetch("../data.json")
         })
     })
 
+searchInput.addEventListener("input", () => {
+    const value = searchInput.value.toLowerCase()
+    const cards = document.querySelectorAll(".countryCard")
+
+    cards.forEach(card => {
+        const title = card.querySelector(".card-title").textContent.toLowerCase()
+        card.style.display = title.includes(value) ? "block" : "none"
+    })
+})
