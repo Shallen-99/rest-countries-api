@@ -7,6 +7,15 @@ body {
     font-family: "Nunito Sans";
 }
 
+main {
+    padding: 24px;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
 .title {
     font-weight: 800;
 }
@@ -21,3 +30,44 @@ body {
     box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
+.container {
+
+    width: 95vw;
+    margin-inline: auto;
+    margin-top: 16px;
+    display: flex;
+    gap: 64px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.countryCard {
+    display: inline-block;
+    width: 250px;
+    border-radius: 4px;
+    padding-bottom: 16px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-title {
+    font-size: 24px;
+    margin-block: 12px;
+}
+
+.card-text {
+    padding-inline: 16px;
+}
+
+.card-text p {
+    margin-block: 8px;
+}
+
+.countryCard:hover {
+    transform: scale(1.05)
+}
+
+.countryCard img {
+    width: 100%;
+}
