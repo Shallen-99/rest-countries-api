@@ -14,7 +14,7 @@ fetch("data.json")
                     <h2 class="card-title">${country.name}</h2>
                     <p><b>Population:</b> </p>
                     <p><b>Region:</b> </p>
-                    <p><b>Capital:</b> </p>
+                    <p><b>Capital:</b> ${country.capital}</p>
                 </div>
             `
 
