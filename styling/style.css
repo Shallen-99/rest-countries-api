@@ -72,6 +72,18 @@ a {
     width: 100%;
 }
 
-#trial {
-    font-family: "Nabla";
+#search {
+    width: 400px;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
+
+/* #search {
+    width: 300px;
+    padding: 10px 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+} */
