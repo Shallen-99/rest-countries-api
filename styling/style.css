@@ -80,10 +80,18 @@ a {
     border: 1px solid #ccc;
 }
 
-/* #search {
-    width: 300px;
-    padding: 10px 14px;
-    font-size: 16px;
-    border-radius: 6px;
-    border: none;
-} */
+.searching {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin: 16px 0 48px 0;
+    margin-inline: auto;
+}
+
+#filter {
+    width: 200px;
+    /* border: none; */
+    border-radius: 4px;
+    padding: 16px;
+    /* outline: 8px ridge rgb(170 50 220 / 0.6); */
+}
