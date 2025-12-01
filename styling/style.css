@@ -7,6 +7,15 @@ body {
     font-family: "Nunito Sans";
 }
 
+body.dark {
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 100%, 100%);
+}
+
+.dark-mode {
+    cursor: pointer;
+}
+
 main {
     padding: 24px;
 }

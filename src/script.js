@@ -1,6 +1,7 @@
 const container = document.querySelector(".container")
 const searchInput = document.getElementById("search");
-const filter = document.querySelector("#filter")
+const filter = document.getElementById("filter")
+const darkMode = document.querySelector(".dark-mode")
 
 fetch("../data.json")
     .then((res) => res.json())
@@ -46,4 +47,8 @@ filter.addEventListener( "change", () => {
 
         card.style.display = select === "" || region.includes(select)?"block":"none"
     })
+})
+
+darkMode.addEventListener("click", () => {
+    document.body.classList.toggle("dark")
 })
