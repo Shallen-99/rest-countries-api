@@ -1,11 +1,12 @@
 const container = document.querySelector(".container")
 const searchInput = document.getElementById("search");
+const filter = document.querySelector("#filter")
 
 fetch("../data.json")
     .then((res) => res.json())
     .then((data) => {
         data.forEach((country) => {
-            console.log(country)
+            // console.log(country)
             const countryCard = document.createElement("a")
             countryCard.classList.add("countryCard")
             countryCard.href = `/text/country.html?name=${country.name}`
@@ -15,7 +16,7 @@ fetch("../data.json")
                 <div class="card-text">
                     <h2 class="card-title">${country.name}</h2>
                     <p><b>Population:</b> ${country.population.toLocaleString("en-US")}</p>
-                    <p><b>Region:</b> ${country.region}</p>
+                    <p class="region"><b>Region:</b> ${country.region}</p>
                     <p><b>Capital:</b> ${country.capital}</p>
                 </div>
             `
@@ -33,5 +34,16 @@ searchInput.addEventListener("input", () => {
     cards.forEach(card => {
         const title = card.querySelector(".card-title").textContent.toLowerCase()
         card.style.display = title.includes(value) ? "block" : "none"
+    })
+})
+
+filter.addEventListener( "change", () => {
+    const select = filter.value.toLowerCase()
+    const cards = document.querySelectorAll(".countryCard")
+
+    cards.forEach(card => {
+        const region = card.querySelector(".region").textContent.toLowerCase()
+
+        card.style.display = select === "" || region.includes(select)?"block":"none"
     })
 })
