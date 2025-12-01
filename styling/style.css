@@ -104,3 +104,12 @@ a {
     padding: 16px;
     /* outline: 8px ridge rgb(170 50 220 / 0.6); */
 }
+
+@media(max-width: 800px) {
+    .header {
+        flex-direction: column;
+    }
+    .searching {
+        flex-direction: column;
+    }
+}
