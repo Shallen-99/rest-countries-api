@@ -1,0 +1,13 @@
+This application was a great way for me to implement everything I’ve learned in class so far
+and even work on some things that I either have not used or was not particularly comfortable
+with using. I did have lots of trouble with this project since I was essentially started with
+zero code and only a picture and descriptions of what should be implemented into the 
+application. Another challenge I had was having to start using querySelector instead of
+getElementsByClass since the exact element I was trying to target was only used once and
+something I learned while doing this project is that even if it is a class if there are
+not multiple elements in the class you should use querySelector. The API was another obstacle 
+since even in their own documentation says it does not work correctly if you try to call all of 
+the info at once and had to learn how to fetch the data.json(a file with all of the info of the 
+api in it) file and have it fill the roll of the API in some cases. A future feature I do look 
+forward to implementing is adding a function where Carmen Sandiego pops up and gives some additional 
+info when you click on one of the countries.
