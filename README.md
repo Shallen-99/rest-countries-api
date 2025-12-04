@@ -42,7 +42,7 @@ Users can switch from light and dark modes for personal preference.
 
 
 ## <a name="deployment"></a>Deployed Link
-[GitHub](https://shallen-99.github.io/rest-countries-api/)
+[Netlify]([https://shallen-99.github.io/rest-countries-api/](https://6931ac75ac5c7070f1706a75--wonderful-liger-0295b7.netlify.app/))
 
 * You can view the repository:
 [Github.com](https://github.com/Shallen-99/rest-countries-api.git)
